@@ -1,4 +1,5 @@
 import { useState } from "react";
+const API_URL = import.meta.env.VITE_API_URL;
 
 import axios from "axios";
 import { Link, useLocation, useNavigate} from "react-router-dom"
@@ -18,7 +19,7 @@ const handlelogin = async (e) => {
 
     try {
         const response = await axios.post(
-            "http://localhost:5000/api/auth/login",
+            `${API_URL}/api/auth/login`,
             {
                 email,
                 password
