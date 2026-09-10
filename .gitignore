@@ -1,2 +1,14 @@
-backend/.env
-backend/node_modules
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Frontend build
+frontend/dist/
+frontend/build/
+
+# Logs
+*.log
